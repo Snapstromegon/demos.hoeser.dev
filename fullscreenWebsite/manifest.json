@@ -1,0 +1,9 @@
+{
+  "name": "FullscreenDemo",
+  "short_name": "Fullscreen Demo",
+  "start_url": "/fullscreenWebsite",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "description": "Eine Demo für Fullscreen Websites.",
+  "scope": "/fullscreenWebsite/"
+}
