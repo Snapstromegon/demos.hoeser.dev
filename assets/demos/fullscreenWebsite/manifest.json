@@ -1,0 +1,42 @@
+{
+  "name": "FullscreenDemo",
+  "short_name": "Fullscreen Demo",
+  "start_url": "/fullscreenWebsite",
+  "display": "fullscreen",
+  "background_color": "#444",
+  "theme_color": "#222",
+  "description": "Eine Demo für Fullscreen Websites.",
+  "scope": "/fullscreenWebsite/",
+  "icons": [
+    {
+      "src": "/assets/icon/logo.svg",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon/logo.png",
+      "sizes": "64x64",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon/logo2.png",
+      "sizes": "128x128",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon/logo3.png",
+      "sizes": "256x256",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon/logo4.png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon/logo5.png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "demos.hoeser.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snapstromegon/demos.hoeser.dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snapstromegon/demos.hoeser.dev/issues"
+  },
+  "homepage": "https://github.com/Snapstromegon/demos.hoeser.dev#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
