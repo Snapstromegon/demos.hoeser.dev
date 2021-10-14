@@ -1,0 +1,441 @@
+---
+tags: demo
+title: Sticky Parent
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Parent Demo</title>
+    <meta name="theme-color" content="#222" />
+    <link rel="shortcut icon" href="/assets/icon/logo.svg" type="image/svg" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      .scrollParent {
+        width: 50vw;
+        height: 66vh;
+        overflow: auto;
+        background: #eee;
+      }
+
+      .letterGroup > h1 {
+        position: sticky;
+        top: 0;
+        background: #8af;
+      }
+
+      .letterGroup:nth-child(even) > h1 {
+        position: sticky;
+        top: 0;
+        background: #8aa;
+      }
+
+      .letterGroup > p:nth-child(even) {
+        background: #8af2;
+      }
+
+      .letterGroup:nth-child(even) > p:nth-child(even) {
+        background: #8aa2;
+      }
+
+      .letterGroup > * {
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Short Scroller</h1>
+    <div class="scrollParent">
+      <div class="letterGroup">
+        <h1>1</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>2</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>3</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>4</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>5</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>6</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>7</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>8</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>9</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>10</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>11</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>12</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>13</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>14</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>15</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>16</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>17</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>18</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>19</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>20</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>21</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>22</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>23</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>24</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>25</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+      <div class="letterGroup">
+        <h1>26</h1>
+        <p>Element 1</p>
+        <p>Element 2</p>
+        <p>Element 3</p>
+        <p>Element 4</p>
+        <p>Element 5</p>
+        <p>Element 6</p>
+        <p>Element 7</p>
+        <p>Element 8</p>
+        <p>Element 9</p>
+        <p>Element 10</p>
+      </div>
+    </div>
+    <style>
+      .longElement {
+        width: 50vw;
+        height: 66vh;
+        overflow:auto;
+      }
+
+      .longScroller {
+        height: 300%;
+        background: #4af;
+      }
+
+      .longScroller:nth-child(even) {
+        background: #4aa;
+      }
+
+      .longScrollerContent {
+        position: sticky;
+        top: 0%;
+        padding: 5rem 0;
+      }
+    </style>
+    <h1>Show up, stay, disappear</h1>
+    <div class="longElement">
+      <div class="longScroller">
+        <div class="longscrollerContent">
+          <h1>Hallo Welt 1</h1>
+        </div>
+      </div>
+      <div class="longScroller">
+        <div class="longscrollerContent">
+          <h1>Hallo Welt 2</h1>
+        </div>
+      </div>
+      <div class="longScroller">
+        <div class="longscrollerContent">
+          <h1>Hallo Welt 3</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
